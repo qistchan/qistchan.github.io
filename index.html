@@ -668,23 +668,6 @@ weibo:	weibo.com/523690252
   <script src="//dn-qistchan-cdn.qbox.me/notice/js/modernizr.custom.js"></script>
   <script src="//dn-qistchan-cdn.qbox.me/notice/js/classie.js"></script>
   <script src="//dn-qistchan-cdn.qbox.me/notice/js/notificationFx.js"></script>
-  <script>
-	function mynotice(){
-		var notification = new NotificationFx({
-			message : '<span style="font-family:Microsoft Yahei;">提示</span><p style="font-size:1em">您所使用的不是安全的连接方式，建议您通过  <a href="https://qistchan.com">HTTPS安全连接</a>  访问本网站!</p>',
-			layout : 'bar',
-			effect : 'slidetop',
-			type : 'notice', // notice, warning or error			
-				});
-		notification.show();
-		}
-	var browser_width = $(window).width(); 
-	if('http:' == document.location.protocol){
-		if(browser_width>=1024){
-			mynotice();
-		}
-	}
-	</script>
 	</div>
   
     <nav class="page-nav">
